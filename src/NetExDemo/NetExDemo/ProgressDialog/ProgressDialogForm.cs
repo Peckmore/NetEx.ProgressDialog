@@ -9,6 +9,7 @@ namespace NetExDemo.ProgressDialog
     {
         #region Fields
 
+        private bool _abortFlag;
         private Thread _t;
 
         #endregion
@@ -37,12 +38,12 @@ namespace NetExDemo.ProgressDialog
         private void ProgressDialog_Canceled(object sender, EventArgs e)
         {
             // Terminate the worker thread.
-            _t.Abort();
+            _abortFlag = true;
         }
         private void ProgressDialog_Closed(object sender, EventArgs e)
         {
             // Terminate the worker thread.
-            _t.Abort();
+            _abortFlag = true;
 
             // Unlock the form buttons.
             UnlockButtons();
@@ -50,7 +51,7 @@ namespace NetExDemo.ProgressDialog
         private void ProgressDialog_Completed(object sender, EventArgs e)
         {
             // Terminate the worker thread.
-            _t.Abort();
+            _abortFlag = true;
         }
         private void ShowButton_Click(object sender, EventArgs e)
         {
@@ -89,7 +90,7 @@ namespace NetExDemo.ProgressDialog
             MessageBox.Show(progressDialog.ShowDialog(this).ToString());
 
             // Terminate the worker thread.
-            _t.Abort();
+            _abortFlag = true;
 
             // Unlock the form buttons.
             UnlockButtons();
@@ -109,7 +110,9 @@ namespace NetExDemo.ProgressDialog
         [SuppressMessage("ReSharper", "LocalizableElement")]
         private void ThreadMethod()
         {
-            while (progressDialog.Value < progressDialog.Maximum)
+            _abortFlag = false;
+
+            while (progressDialog.Value < progressDialog.Maximum && !_abortFlag)
             {
                 progressDialog.Value += 1;
                 progressDialog.SetLine(1, "Line #1: step " + progressDialog.Value);
