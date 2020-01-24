@@ -389,7 +389,13 @@ namespace System.Windows.Forms
 
                             // If we are modeless raise the Canceled event.
                             if (!_modal)
+                            {
+#if NETCORE
+                                Threading.Tasks.Task.Run(() => Canceled?.Invoke(this, EventArgs.Empty));
+#else
                                 Canceled?.BeginInvoke(this, EventArgs.Empty, null, null);
+#endif
+                            }
 
                             // If AutoClose is set to true then exit the loop.
                             if (AutoClose)
