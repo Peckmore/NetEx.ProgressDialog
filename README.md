@@ -22,21 +22,24 @@ All projects are available on NuGet. Each project is listed as a separate NuGet 
 
 The source for this repository is effectively split into two categories:
 
-* **NetEx**: Projects which contain the extensions to the .Net Framework. This is the core of this repository.
+* **NetEx**: Projects which contain the extensions to the .Net Framework. This is the core of the repository.
 * **NetExDemo**: Test projects which demonstrate the use of the **NetEx** projects.
 
 ### NetEx
 
 **NetEx** currently contains the following projects:
 
-* **CredentialDialog**: A managed implementation of the standard Windows credential dialog.
-* **ProgressDialog**: A managed implementation of the standard Windows progress dialog.
+* **CredentialDialog**: A managed implementation of the standard Windows credential dialog targeting .Net Framework 2.0.
+* **CredentialDialogCore**: The same credential dialog project but targeting .Net Core 3.0.
+* **ProgressDialog**: A managed implementation of the standard Windows progress dialog targeting .Net Framework 2.0.
+* **ProgressDialogCore**: The same progress dialog project but targeting .Net Core 3.0.
 
 ### NetExDemo
 
 **NetExDemo** currently contains the following projects:
 
-* **NetExDemo**: A test project which demonstrates usage of the **NetEx** libraries.
+* **NetExDemo**: A test project which demonstrates usage of the **NetEx** libraries targeting .Net Framework 2.0.
+* **NetExDemoCore**: The same test project but targeting .Net Core 3.0.
 
 ##  License
 

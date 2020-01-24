@@ -3,5 +3,5 @@
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("NetEx Test Client")]
-[assembly: AssemblyDescription("A .Net Framework client for testing and demonstrating features within the NetEx project.")]
+[assembly: AssemblyTitle("System.Windows.Forms.CredentialDialog")]
+[assembly: AssemblyDescription("A managed implementation of the standard Windows credential dialog for WinForms.")]

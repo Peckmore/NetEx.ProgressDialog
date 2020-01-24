@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyCompany("Simon Peckmore")]
 [assembly: AssemblyProduct("NetEx - Extensions for the .Net Framework")]
-[assembly: AssemblyCopyright("Copyright © Simon Peckmore 2018")]
+[assembly: AssemblyCopyright("Copyright © Simon Peckmore 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -4,4 +4,4 @@
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("NetEx Test Client")]
-[assembly: AssemblyDescription("A .Net Framework client for testing and demonstrating features within the NetEx project.")]
+[assembly: AssemblyDescription("A .Net Core client for testing and demonstrating features within the NetEx project.")]

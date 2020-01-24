@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Authors>Simon Peckmore</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <ErrorReport>none</ErrorReport>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\Solution Items\CommonAssemblyInfo.cs" Link="Properties\CommonAssemblyInfo.cs" />
+    <Compile Include="..\NetExDemo\CredentialDialog\CredentialDialogForm.cs" Link="CredentialDialog\CredentialDialogForm.cs" />
+    <Compile Include="..\NetExDemo\CredentialDialog\CredentialDialogForm.Designer.cs" Link="CredentialDialog\CredentialDialogForm.Designer.cs" />
+    <Compile Include="..\NetExDemo\GlobalSuppressions.cs" Link="GlobalSuppressions.cs" />
+    <Compile Include="..\NetExDemo\MainForm.cs" Link="MainForm.cs" />
+    <Compile Include="..\NetExDemo\MainForm.Designer.cs" Link="MainForm.Designer.cs" />
+    <Compile Include="..\NetExDemo\Program.cs" Link="Program.cs" />
+    <Compile Include="..\NetExDemo\ProgressDialog\ProgressDialogForm.cs" Link="ProgressDialog\ProgressDialogForm.cs" />
+    <Compile Include="..\NetExDemo\ProgressDialog\ProgressDialogForm.Designer.cs" Link="ProgressDialog\ProgressDialogForm.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\NetExDemo\CredentialDialog\CredentialDialogForm.resx" Link="CredentialDialog\CredentialDialogForm.resx" />
+    <EmbeddedResource Include="..\NetExDemo\MainForm.resx" Link="MainForm.resx" />
+    <EmbeddedResource Include="..\NetExDemo\ProgressDialog\ProgressDialogForm.resx" Link="ProgressDialog\ProgressDialogForm.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\NetExDemo\app.config" Link="app.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\NetEx\CredentialDialogCore\CredentialDialogCore.csproj" />
+    <ProjectReference Include="..\..\NetEx\ProgressDialogCore\ProgressDialogCore.csproj" />
+  </ItemGroup>
+
+</Project>
