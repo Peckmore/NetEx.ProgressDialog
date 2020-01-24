@@ -125,13 +125,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NetEx\System.Windows.Forms.CredentialDialog\System.Windows.Forms.CredentialDialog.csproj">
+    <ProjectReference Include="..\..\NetEx\CredentialDialog\CredentialDialog.csproj">
       <Project>{5116d193-c76a-4e68-bd80-f9b7d55f0c0e}</Project>
-      <Name>System.Windows.Forms.CredentialDialog</Name>
+      <Name>CredentialDialog</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\NetEx\System.Windows.Forms.ProgressDialog\System.Windows.Forms.ProgressDialog.csproj">
+    <ProjectReference Include="..\..\NetEx\ProgressDialog\ProgressDialog.csproj">
       <Project>{dad298fb-bb35-417c-b108-65d377acdaeb}</Project>
-      <Name>System.Windows.Forms.ProgressDialog</Name>
+      <Name>ProgressDialog</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

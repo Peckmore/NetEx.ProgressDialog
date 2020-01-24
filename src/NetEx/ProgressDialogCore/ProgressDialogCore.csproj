@@ -34,18 +34,18 @@
 
   <ItemGroup>
     <Compile Include="..\..\Solution Items\CommonAssemblyInfo.cs" Link="Properties\CommonAssemblyInfo.cs" />
-    <Compile Include="..\System.Windows.Forms.ProgressDialog\AnimationResource.cs" Link="AnimationResource.cs" />
-    <Compile Include="..\System.Windows.Forms.ProgressDialog\GlobalSuppressions.cs" Link="GlobalSuppressions.cs" />
-    <Compile Include="..\System.Windows.Forms.ProgressDialog\Internal\IProgressDialog.cs" Link="Internal\IProgressDialog.cs" />
-    <Compile Include="..\System.Windows.Forms.ProgressDialog\Internal\PROGDLG.cs" Link="Internal\PROGDLG.cs" />
-    <Compile Include="..\System.Windows.Forms.ProgressDialog\Internal\WindowsProgressDialog.cs" Link="Internal\WindowsProgressDialog.cs" />
-    <Compile Include="..\System.Windows.Forms.ProgressDialog\NativeMethods.cs" Link="NativeMethods.cs" />
-    <Compile Include="..\System.Windows.Forms.ProgressDialog\ProgressDialog.cs" Link="ProgressDialog.cs" />
-    <Compile Include="..\System.Windows.Forms.ProgressDialog\ProgressDialogProgressBarStyle.cs" Link="ProgressDialogProgressBarStyle.cs" />
+    <Compile Include="..\ProgressDialog\AnimationResource.cs" Link="AnimationResource.cs" />
+    <Compile Include="..\ProgressDialog\GlobalSuppressions.cs" Link="GlobalSuppressions.cs" />
+    <Compile Include="..\ProgressDialog\Internal\IProgressDialog.cs" Link="Internal\IProgressDialog.cs" />
+    <Compile Include="..\ProgressDialog\Internal\PROGDLG.cs" Link="Internal\PROGDLG.cs" />
+    <Compile Include="..\ProgressDialog\Internal\WindowsProgressDialog.cs" Link="Internal\WindowsProgressDialog.cs" />
+    <Compile Include="..\ProgressDialog\NativeMethods.cs" Link="NativeMethods.cs" />
+    <Compile Include="..\ProgressDialog\ProgressDialog.cs" Link="ProgressDialog.cs" />
+    <Compile Include="..\ProgressDialog\ProgressDialogProgressBarStyle.cs" Link="ProgressDialogProgressBarStyle.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="..\System.Windows.Forms.ProgressDialog\ToolboxBitmap.png" Link="ToolboxBitmap.png" />
+    <Content Include="..\ProgressDialog\ToolboxBitmap.png" Link="ToolboxBitmap.png" />
   </ItemGroup>
 
 </Project>
