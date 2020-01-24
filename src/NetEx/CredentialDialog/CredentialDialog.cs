@@ -60,7 +60,10 @@ namespace System.Windows.Forms
         /// Initializes a new instance of the <see cref="CredentialDialog" /> class.
         /// </summary>
         [SuppressMessage("ReSharper", "InheritdocConsiderUsage")]
-        public CredentialDialog() => Reset();
+        public CredentialDialog()
+        {
+            Reset();
+        }
 
         #endregion
 
@@ -209,9 +212,9 @@ namespace System.Windows.Forms
         }
 #if DEBUG
         /// <summary>
-        /// Gets a <see cref="String"/> containing the password entered in the dialog box.
+        /// Gets a <see cref="string"/> containing the password entered in the dialog box.
         /// </summary>
-        /// <value>The value of <see cref="Password"/> converted to a <see cref="String"/>.</value>
+        /// <value>The value of <see cref="Password"/> converted to a <see cref="string"/>.</value>
         /// <remarks>This method is provided for debugging purposes only and is only included in debug builds.</remarks>
         [Category("Data")]
         [Description("The password entered in the dialog box.")]

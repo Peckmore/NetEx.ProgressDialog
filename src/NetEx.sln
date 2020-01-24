@@ -9,6 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetExDemo", "NetExDemo\NetE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C40E06CE-8BD0-4CD7-979E-AB9B0CAFA328}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		Solution Items\CommonAssemblyInfo.cs = Solution Items\CommonAssemblyInfo.cs
 	EndProjectSection
 EndProject

@@ -54,12 +54,18 @@ namespace System.Windows.Forms
         /// <returns>true if <paramref name="left"/> equals <paramref name="right"/>; otherwise, false.</returns>
         /// <param name="left">The first <see cref="Version" /> object.</param>
         /// <param name="right">The second <see cref="Version" /> object.</param>
-        public static bool operator ==(AnimationResource left, AnimationResource right) => left?.FileName == right?.FileName && left?.ResourceIndex == right?.ResourceIndex;
+        public static bool operator ==(AnimationResource left, AnimationResource right)
+        {
+            return left?.FileName == right?.FileName && left?.ResourceIndex == right?.ResourceIndex;
+        }
         /// <summary>Determines whether two specified <see cref="AnimationResource"/> objects are not equal.</summary>
         /// <returns>true if <paramref name="left" /> does not equal <paramref name="right" />; otherwise, false.</returns>
         /// <param name="left">The first <see cref="AnimationResource"/> object.</param>
         /// <param name="right">The second <see cref="AnimationResource"/> object.</param>
-        public static bool operator !=(AnimationResource left, AnimationResource right) => !(left == right);
+        public static bool operator !=(AnimationResource left, AnimationResource right)
+        {
+            return !(left == right);
+        }
 
         #endregion
 
@@ -70,12 +76,18 @@ namespace System.Windows.Forms
         /// </summary>
         /// <param name="obj">The object to test.</param>
         /// <returns>true if the <paramref name="obj"/> parameter is an <see cref="AnimationResource"/> and has the same <see cref="FileName"/> and <see cref="ResourceIndex"/> property values as this <see cref="AnimationResource"/>; otherwise, false.</returns>
-        public override bool Equals(object obj) => obj as AnimationResource == this;
+        public override bool Equals(object obj)
+        {
+            return obj as AnimationResource == this;
+        }
         /// <summary>
         /// Gets the hash code for this <see cref="AnimationResource"/>.
         /// </summary>
         /// <returns>The hash code for this <see cref="AnimationResource"/>.</returns>
-        public override int GetHashCode() => FileName.GetHashCode() ^ ResourceIndex.GetHashCode();
+        public override int GetHashCode()
+        {
+            return FileName.GetHashCode() ^ ResourceIndex.GetHashCode();
+        }
         /// <summary>
         /// Returns a string representation of this <see cref="AnimationResource"/>.
         /// </summary>
